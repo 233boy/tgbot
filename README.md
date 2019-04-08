@@ -33,6 +33,7 @@ match 是一个数组，里面存放所有处理规则。请参考：[match.json
 必填。规则的类型，可选 "reply" 或 "delete"
 - reply
     - 回复一条消息
+
 - detele
     - 删除一条消息
 
@@ -74,10 +75,21 @@ match 是一个数组，里面存放所有处理规则。请参考：[match.json
     "type": "reply",
     "regex": [
         "cf|cloud\\s*flare",
+        "!!!快",
         "慢",
-        "中转|速度"
+        "好|很|非常|中转|速度"
     ],
     "content": "慢是正常，快是意外。",
     "replyToMsg": true
 }
 ```
+
+只要消息包含：cf | cloudflare，慢，好 | 很 | 非常 | 中转 | 速度，但排除 "快"，便会匹配。
+
+例如：
+
+- 为什么 cloudflare 到了晚上就好慢。。
+    - 匹配
+
+- 我这里 cloudflare 速度好快啊。。一点都不慢！
+    - 不匹配

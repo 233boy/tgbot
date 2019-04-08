@@ -15,8 +15,9 @@
             "type": "reply",
             "regex": [
                 "cf|cloud\\s*flare",
+                "!!!快",
                 "慢",
-                "中转|速度"
+                "好|很|非常|中转|速度"
             ],
             "content": "慢是正常，快是意外。",
             "replyToMsg": true
