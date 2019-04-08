@@ -1,0 +1,25 @@
+{
+    "match": [
+        {
+            "name": "hello world",
+            "type": "reply",
+            "regex": [
+                "hello",
+                "!!!test",
+                "world"
+            ],
+            "content": "发现 hello world 啦！！！",
+            "replyToMsg": false
+        },
+        {
+            "type": "reply",
+            "regex": [
+                "cf|cloud\\s*flare",
+                "慢",
+                "中转|速度"
+            ],
+            "content": "慢是正常，快是意外。",
+            "replyToMsg": true
+        }
+    ]
+}
