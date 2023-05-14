@@ -1,6 +1,6 @@
 # tgbot
 
-[233blog TG 群组](https://t.me/blog233) 自动回复机器人的处理规则 
+[233boy TG 群组](https://t.me/tg233boy) 自动回复机器人的处理规则 
 
 ## Match 规则
 
